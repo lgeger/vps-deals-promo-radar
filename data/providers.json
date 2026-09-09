@@ -1,0 +1,7 @@
+[
+ {"id":"ovhcloud","name":"OVHcloud","source_url":"https://www.ovhcloud.com/en/vps/"},
+ {"id":"akamai","name":"Akamai / Linode","source_url":"https://www.linode.com/"},
+ {"id":"hetzner","name":"Hetzner","source_url":"https://www.hetzner.com/cloud"},
+ {"id":"vultr","name":"Vultr","source_url":"https://www.vultr.com/"},
+ {"id":"digitalocean","name":"DigitalOcean","source_url":"https://www.digitalocean.com/"}
+]

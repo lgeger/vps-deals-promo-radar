@@ -1,0 +1,112 @@
+{
+  "updated_at": "2026-09-09T08:34:29+00:00",
+  "offers": [
+    {
+      "name": "VPS-1",
+      "kind": "listed_price",
+      "price": "4.54",
+      "currency": "USD",
+      "billing_period": "month",
+      "evidence": "VPS-1 | From | $4.54 | /month | Configure | 2 vCores | 4 GB | RAM | 40 GB SSD NVMe | Daily backup of the previous 24 hours | Unlimited traffic | 500 Mbps public bandwidth",
+      "terms": "官方 World/USD 页面起价；税费、地区、期限和续费以结账页为准。",
+      "id": "ovhcloud-ab3ee4bdba",
+      "provider": "ovhcloud",
+      "offer_url": "https://www.ovhcloud.com/en/vps/",
+      "source_url": "https://www.ovhcloud.com/en/vps/",
+      "verified_at": "2026-09-09T08:34:29+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "c5640759eb90c820490d56f4cee560e0a02d70789024ef6733d1dd85536177ba"
+    },
+    {
+      "name": "VPS-2",
+      "kind": "listed_price",
+      "price": "8.50",
+      "currency": "USD",
+      "billing_period": "month",
+      "evidence": "VPS-2 | From | $8.50 | /month | Configure | 4 vCores | 8 GB | RAM | 75 GB SSD NVMe | Daily backup of the previous 24 hours | Unlimited traffic | 1 Gbps public bandwidth",
+      "terms": "官方 World/USD 页面起价；税费、地区、期限和续费以结账页为准。",
+      "id": "ovhcloud-e971c32829",
+      "provider": "ovhcloud",
+      "offer_url": "https://www.ovhcloud.com/en/vps/",
+      "source_url": "https://www.ovhcloud.com/en/vps/",
+      "verified_at": "2026-09-09T08:34:29+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "c5640759eb90c820490d56f4cee560e0a02d70789024ef6733d1dd85536177ba"
+    },
+    {
+      "name": "VPS-3",
+      "kind": "listed_price",
+      "price": "12.32",
+      "currency": "USD",
+      "billing_period": "month",
+      "evidence": "VPS-3 | From | $12.32 | /month | Configure | 6 vCores | 12 GB | RAM | 100 GB SSD NVMe | Daily backup of the previous 24 hours | Unlimited traffic | 2 Gbps public bandwidth",
+      "terms": "官方 World/USD 页面起价；税费、地区、期限和续费以结账页为准。",
+      "id": "ovhcloud-89071881ae",
+      "provider": "ovhcloud",
+      "offer_url": "https://www.ovhcloud.com/en/vps/",
+      "source_url": "https://www.ovhcloud.com/en/vps/",
+      "verified_at": "2026-09-09T08:34:29+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "c5640759eb90c820490d56f4cee560e0a02d70789024ef6733d1dd85536177ba"
+    },
+    {
+      "name": "VPS-4",
+      "kind": "listed_price",
+      "price": "23.37",
+      "currency": "USD",
+      "billing_period": "month",
+      "evidence": "VPS-4 | From | $23.37 | /month | Configure | 8 vCores | 24 GB | RAM | 200 GB SSD NVMe | Daily backup of the previous 24 hours | Unlimited traffic | 3 Gbps public bandwidth",
+      "terms": "官方 World/USD 页面起价；税费、地区、期限和续费以结账页为准。",
+      "id": "ovhcloud-864da52d8e",
+      "provider": "ovhcloud",
+      "offer_url": "https://www.ovhcloud.com/en/vps/",
+      "source_url": "https://www.ovhcloud.com/en/vps/",
+      "verified_at": "2026-09-09T08:34:29+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "c5640759eb90c820490d56f4cee560e0a02d70789024ef6733d1dd85536177ba"
+    }
+  ],
+  "checks": [
+    {
+      "provider": "ovhcloud",
+      "source_url": "https://www.ovhcloud.com/en/vps/",
+      "checked_at": "2026-09-09T08:34:29+00:00",
+      "status": "ok",
+      "count": 4
+    },
+    {
+      "provider": "akamai",
+      "source_url": "https://www.linode.com/",
+      "checked_at": "2026-09-09T08:34:29+00:00",
+      "status": "unavailable",
+      "count": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "provider": "hetzner",
+      "source_url": "https://www.hetzner.com/cloud",
+      "checked_at": "2026-09-09T08:34:29+00:00",
+      "status": "no_verified_offer",
+      "count": 0
+    },
+    {
+      "provider": "vultr",
+      "source_url": "https://www.vultr.com/",
+      "checked_at": "2026-09-09T08:34:29+00:00",
+      "status": "unavailable",
+      "count": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "provider": "digitalocean",
+      "source_url": "https://www.digitalocean.com/",
+      "checked_at": "2026-09-09T08:34:29+00:00",
+      "status": "no_verified_offer",
+      "count": 0
+    }
+  ]
+}
