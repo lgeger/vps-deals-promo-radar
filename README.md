@@ -4,7 +4,9 @@
 
 仓库：https://github.com/lgeger/vps-deals-promo-radar
 
-部署目标：https://vps-deals-promo-radar.pages.dev （部署成功后才可视为上线）
+已上线：https://vps-deals-promo-radar.pages.dev
+
+2026-09-09 已验证生产站可访问，首次 Actions 抓取、构建、提交成功：https://github.com/lgeger/vps-deals-promo-radar/actions/runs/34330334858
 
 ## 本地运行
 
