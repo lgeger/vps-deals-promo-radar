@@ -4,7 +4,9 @@
 
 仓库：https://github.com/lgeger/vps-deals-promo-radar
 
-已上线：https://vps-deals-promo-radar.pages.dev
+正式地址：https://vps.wpxtool.com
+
+Pages 默认地址：https://vps-deals-promo-radar.pages.dev
 
 2026-09-09 已验证生产站可访问，首次 Actions 抓取、构建、提交成功：https://github.com/lgeger/vps-deals-promo-radar/actions/runs/34330334858
 

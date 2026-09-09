@@ -8,7 +8,7 @@ from string import Template
 from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'site'
-BASE = 'https://vps-deals-promo-radar.pages.dev'
+BASE = 'https://vps.wpxtool.com'
 def esc(value): return escape(str(value), quote=True)
 def safe_url(value):
     if urlsplit(value).scheme != 'https' or not urlsplit(value).netloc: raise ValueError('HTTPS URL required')
