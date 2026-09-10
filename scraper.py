@@ -9,6 +9,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from providers import load_providers
+
 ROOT = Path(__file__).resolve().parent
 UA = 'VPSDealsRadar/1.0'
 
@@ -30,7 +32,7 @@ def fetch(url):
 
 def scrape():
     now = datetime.now(timezone.utc).isoformat(timespec='seconds')
-    providers = json.loads((ROOT / 'data/providers.json').read_text())
+    providers = load_providers()
     offers, checks = [], []
     for provider in providers:
         url = provider['source_url']
@@ -48,6 +50,12 @@ def scrape():
                 pattern = r'(VPS-\d+) \| From \| \$(\d+(?:\.\d+)?) \| /month \| Configure \| (.*?)(?= \| (?:202\d|VPS-\d+|New VPS range)|$)'
                 for match in re.finditer(pattern, text):
                     found.append(dict(name=match[1], kind='listed_price', price=match[2], currency='USD', billing_period='month', evidence=match[0][:650], terms='官方 World/USD 页面起价；税费、地区、期限和续费以结账页为准。'))
+            elif provider['id'] == 'dreamhost':
+                pattern = r'(Stack \d+) \| .*?First (\d+) months at \| \$(\d+\.\d{2}) \| /mo \| SAVE \| \d+% \| Sign Up Now \| Auto-renews at \| \$(\d+\.\d{2}) \| /mo after (\d+) months\.'
+                for match in re.finditer(pattern, text):
+                    if match[2] != match[5]:
+                        continue
+                    found.append(dict(name='DreamHost '+match[1], kind='listed_price', price=match[3], currency='USD', billing_period='month', evidence=match[0], terms='官方月付促销：前 '+match[2]+' 个月每月 $'+match[3]+'，随后每月 $'+match[4]+' 自动续费；结账另计税费，以官网实际订单为准。'))
             elif provider['id'] == 'akamai':
                 match = re.search(r'Get up to US\$[\d,]+ in cloud credits\* \| .*?Offer available to new and existing enterprise customers\.', text)
                 if match:

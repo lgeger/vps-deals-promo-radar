@@ -4,16 +4,34 @@
       "url": "https://www.vultr.com/?ref=9922337",
       "terms_url": "https://console.vultr.com/referral/tos/",
       "verified_at": "2026-09-10"
+    },
+    "dreamhost": {
+      "name": "DreamHost",
+      "homepage": "https://www.dreamhost.com/",
+      "source_url": "https://www.dreamhost.com/hosting/vps/",
+      "url": "",
+      "terms_url": "https://www.dreamhost.com/legal/tune-terms-and-conditions/",
+      "eligibility": "允许优惠站；须申请获批，当前未申请",
+      "require_offers": true
+    },
+    "namecheap": {
+      "name": "Namecheap",
+      "homepage": "https://www.namecheap.com/",
+      "source_url": "https://www.namecheap.com/hosting/vps/",
+      "url": "",
+      "terms_url": "https://www.namecheap.com/legal/affiliate-program/affiliate-agreement/",
+      "eligibility": "允许优惠站；须申请获批，当前未申请",
+      "require_offers": true
     }
   },
   "_comments": {
     "provider_expansion_reviewed_at": "2026-09-10",
-    "screening_rule": "需要官方现金联盟、优惠站条款通过；按本轮原文，品牌词竞价禁令亦排除。未确认或需特批均不进入新增 PROVIDERS。",
+    "screening_rule": "允许优惠站且禁止品牌词竞价仍放行；条款不全暂缓，不视为排除。公开数据抓取失败不生成新增空壳页。",
     "excluded_or_pending": [
       {
         "name": "Namecheap",
-        "status": "口径待确认",
-        "reason": "优惠站可参加但品牌词竞价禁止；仅用联盟专供优惠码；当前自动抓取 403，不能作为稳定数据源。",
+        "status": "条款放行，申请未提交",
+        "reason": "官方条款接受优惠站；禁止品牌词竞价不再是拒收理由。新增页面须有本次成功抓取的真实报价。",
         "source": "https://www.namecheap.com/legal/affiliate-program/affiliate-agreement/"
       },
       {
@@ -36,8 +54,8 @@
       },
       {
         "name": "DreamHost",
-        "status": "口径待确认",
-        "reason": "明确接受优惠站（须初审及持续批准），但禁止品牌词竞价；收款仅 Direct Bank Transfer，需要另核实收款条件。",
+        "status": "条款放行，申请未提交",
+        "reason": "官方条款接受优惠站；禁止品牌词竞价不再是拒收理由。新增页面须有本次成功抓取的真实报价。",
         "source": "https://www.dreamhost.com/legal/tune-terms-and-conditions/"
       },
       {
@@ -186,5 +204,10 @@
       "digitalocean": "沿用：排除优惠站"
     },
     "existing_vultr": "现有配置与出口保持不变；当前普通推荐每名合格客户 $10，不与另一 $100 活动混写。"
-  }
+  },
+  "BOUNDARY": [
+    "永久禁止品牌词竞价：站上任何页面不做品牌词竞价，不买任何厂商的品牌词。",
+    "不投放任何广告。",
+    "无真实联盟链接时使用官方直链，不伪造追踪参数。"
+  ]
 }
