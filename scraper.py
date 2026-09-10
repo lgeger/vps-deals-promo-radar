@@ -61,9 +61,19 @@ def scrape():
                 if match:
                     found.append(dict(name=match[0].split(' | ')[0], kind='credit', price=None, currency=None, billing_period=None, evidence=match[0], terms='面向新老企业客户，需申请及资格审核；额度不是现金或主机价格。'))
             elif provider['id'] == 'inmotion':
-                pattern = r'(VPS \d+ vCPU)(?: \|[^|]*)*? \| You Save \| (\d+)% \| \$([\d.]+) \| /mo \| For (\d+) month term \| Renews at \| \$([\d.]+) \| /mo'
-                for match in re.finditer(pattern, text):
-                    found.append(dict(name='InMotion '+match[1], kind='listed_price', price=match[3], currency='USD', billing_period='month', evidence=match[0], terms='官方促销价：'+match[4]+' 个月期每月 $'+match[3]+'，官网标注优惠 '+match[2]+'%，到期按每月 $'+match[5]+' 续费；税费与地区以结账页为准。'))
+                # 官方页面含多档期限切换，HTML 中每档文案都写作 24 month term。
+                # 以浏览器默认展示档位（每组第 2 档）为准，避免与用户点开所见不一致。
+                name_pat = r'(VPS \d+ vCPU)'
+                price_pat = r'You Save \| (\d+)% \| \$([\d.]+) \| /mo \| For (\d+) month term \| Renews at \| \$([\d.]+) \| /mo'
+                im_names = [(m.start(), m[1]) for m in re.finditer(name_pat, text)]
+                im_prices = [(m.start(), m) for m in re.finditer(price_pat, text)]
+                for idx, (npos, nname) in enumerate(im_names):
+                    end = im_names[idx+1][0] if idx+1 < len(im_names) else len(text)
+                    group = [m for pos, m in im_prices if npos < pos < end]
+                    if len(group) < 2:
+                        continue
+                    m = group[1]
+                    found.append(dict(name='InMotion '+nname, kind='listed_price', price=m[2], currency='USD', billing_period='month', evidence=m[0], terms='官方 VPS 页默认展示档：每月 $'+m[2]+'，官网标注优惠 '+m[1]+'%，页面文案写作 '+m[3]+' 个月期，续费每月 $'+m[4]+'。该页还有其它期限档位，切换后价格不同，以官网实际选择为准。'))
             elif provider['id'] == 'contabo':
                 pattern = r'(Cloud VPS \d+) \| €(\d+\.\d{2}) \| \d+ \| \d+ \| / month'
                 seen = set()
