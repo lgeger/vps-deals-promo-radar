@@ -44,7 +44,6 @@ def build():
     shutil.copy(ROOT/'templates/style.css',OUT/'style.css')
     (OUT/'data').mkdir(); shutil.copy(ROOT/'data/offers.json',OUT/'data/offers.json')
     (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n')
-    paths.append('/data/offers.json')
     lastmod = esc(datetime.fromisoformat(stamp).isoformat())
     (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+BASE+p+'</loc><lastmod>'+lastmod+'</lastmod></url>' for p in paths)+'</urlset>')
     (OUT/'404.html').write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>条目已下架</title><h1>此条目不存在或已不再可核验</h1><a href="/">查看最新条目</a></html>')
