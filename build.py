@@ -16,7 +16,7 @@ def safe_url(value):
 def build():
     data = json.loads((ROOT/'data/offers.json').read_text())
     providers = json.loads((ROOT/'data/providers.json').read_text())
-    affiliates = json.loads((ROOT/'data/affiliates.json').read_text())
+    affiliates = json.loads((ROOT/'.ilang/site.ilang').read_text())['PROVIDERS']
     if OUT.exists(): shutil.rmtree(OUT)
     OUT.mkdir()
     names = {p['id']: p['name'] for p in providers}
@@ -34,7 +34,8 @@ def build():
     checks = ''.join('<li><a href="/providers/'+c['provider']+'/">'+esc(names[c['provider']])+'</a><span>'+status_labels[c['status']]+'</span></li>' for c in data['checks'])
     page('', 'index.html', 'VPS Deals · 官方主机优惠观察', cards=cards(offers), checks=checks, count=len(offers))
     for p in providers:
-        page('providers/'+p['id'],'provider.html',p['name']+' · VPS Deals', name=esc(p['name']), source=safe_url(p['source_url']),cards=cards([o for o in offers if o['provider']==p['id']]))
+        link = affiliates.get(p['id'])
+        page('providers/'+p['id'],'provider.html',p['name']+' · VPS Deals', name=esc(p['name']), source=safe_url(link['url'] if link else p['source_url']), rel='sponsored nofollow noopener' if link else 'noopener', disclosure='此链接为联盟链接，成交后本站可能获得佣金。' if link else '', cards=cards([o for o in offers if o['provider']==p['id']]))
     for o in offers:
         link = affiliates.get(o['provider'])
         href = link['url'] if link else o['offer_url']

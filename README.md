@@ -36,9 +36,9 @@ Cloudflare Pages 选择 Git 集成，仓库 lgeger/vps-deals-promo-radar，生�
 
 ## 变现配置
 
-目前没有联盟账号或佣金证明，因此所有链接为官方直链，没有收入承诺。
+2026-09-10 已从 Vultr Referral Program 后台核验推广链接，接入厂商页；PayPal 收款设置已保存，最低付款额 $100。后台显示每名合格新付费用户 $10，需活跃超过 30 天且至少支付 $10；并非注册即获佣金，没有收入承诺。
 
-获批后，在 data/affiliates.json 添加供应商 ID 对应对象（url 为自己的获批 HTTPS 跟踪链接，另可存 terms_url、verified_at）。build.py 自动标注佣金披露并添加 sponsored nofollow。先核实官方联盟条款是否支持持续佣金；按年付费不等于按年分佣，不能编造佣金比例。托管主机可以后续扩展独立来源和对比维度，当前不把 VPS 说成托管服务。
+联盟链接唯一配置为 .ilang/site.ilang（JSON 格式）的 PROVIDERS 对象，在其中添加供应商 ID 对应对象（url 为自己的获批 HTTPS 跟踪链接，另可存 terms_url、verified_at）。build.py 自动标注佣金披露并添加 sponsored nofollow。先核实官方联盟条款是否支持持续佣金；按年付费不等于按年分佣，不能编造佣金比例。托管主机可以后续扩展独立来源和对比维度，当前不把 VPS 说成托管服务。
 
 可叠加：真实联盟推广 → 明确标注的赞助位 → 有实际价值的运维选购内容 → 出售域名、代码、品牌及可验证收入史。保留真实流量、成本、结算和内容授权证明，不造回链，不刷量。
 

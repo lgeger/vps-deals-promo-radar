@@ -1,0 +1,9 @@
+{
+  "PROVIDERS": {
+    "vultr": {
+      "url": "https://www.vultr.com/?ref=9922337",
+      "terms_url": "https://console.vultr.com/referral/tos/",
+      "verified_at": "2026-09-10"
+    }
+  }
+}
