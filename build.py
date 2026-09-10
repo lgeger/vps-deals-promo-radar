@@ -33,13 +33,24 @@ def build():
         target = OUT/path/'index.html'; target.parent.mkdir(parents=True, exist_ok=True); target.write_text(html)
         paths.append('/'+path+('/' if path else ''))
     status_labels = {'ok':'已核验', 'no_verified_offer':'未提取到可核验优惠', 'unavailable':'本次无法访问'}
+    check_by = {c['provider']: c for c in data['checks']}
+    def note_for(pid):
+        c = check_by.get(pid)
+        if not c:
+            return '本次未执行抓取检查。'
+        base = '本次抓取状态：'+status_labels[c['status']]+'。来源页：'+c['source_url']+'；抓取时间：'+c['checked_at']+'。'
+        if c['status'] == 'ok':
+            return base+'共 '+str(c['count'])+' 条，逐条附官方原文证据。'
+        if c['status'] == 'unavailable':
+            return base+'具体返回：'+str(c.get('error') or '未记录')+'。此次未能取得官方页面，不代表该厂商没有优惠。'
+        return base+'官方页面可访问，但本次未提取到可核验条目；不代表该厂商没有优惠。'
     checks = ''.join('<li><a href="/providers/'+c['provider']+'/">'+esc(names[c['provider']])+'</a><span>'+status_labels[c['status']]+'</span></li>' for c in data['checks'] if c['provider'] in visible)
     page('', 'index.html', 'VPS Deals · 官方主机优惠观察', cards=cards(offers), checks=checks, count=len(offers))
     for p in providers:
         if p['id'] not in visible: continue
         link = affiliates.get(p['id'])
         if link and not link.get('url'): link = None
-        page('providers/'+p['id'],'provider.html',p['name']+' · VPS Deals', name=esc(p['name']), source=safe_url(link['url'] if link else p['source_url']), rel='sponsored nofollow noopener' if link else 'noopener', disclosure='此链接为联盟链接，成交后本站可能获得佣金。' if link else '', cards=cards([o for o in offers if o['provider']==p['id']]))
+        page('providers/'+p['id'],'provider.html',p['name']+' · VPS Deals', name=esc(p['name']), source=safe_url(link['url'] if link else p['source_url']), rel='sponsored nofollow noopener' if link else 'noopener', disclosure='此链接为联盟链接，成交后本站可能获得佣金。' if link else '', status_note=esc(note_for(p['id'])), cards=cards([o for o in offers if o['provider']==p['id']]))
     for o in offers:
         link = affiliates.get(o['provider'])
         if link and not link.get('url'): link = None

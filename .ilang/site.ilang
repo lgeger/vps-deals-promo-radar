@@ -11,7 +11,7 @@
       "source_url": "https://www.dreamhost.com/hosting/vps/",
       "url": "",
       "terms_url": "https://www.dreamhost.com/legal/tune-terms-and-conditions/",
-      "eligibility": "允许优惠站；须申请获批，当前未申请",
+      "eligibility": "允许优惠站；联盟申请未提交，当前出裸链",
       "require_offers": true
     },
     "namecheap": {
@@ -20,181 +20,201 @@
       "source_url": "https://www.namecheap.com/hosting/vps/",
       "url": "",
       "terms_url": "https://www.namecheap.com/legal/affiliate-program/affiliate-agreement/",
-      "eligibility": "允许优惠站；须申请获批，当前未申请",
-      "require_offers": true
+      "eligibility": "条款接受优惠站；Impact 联盟申请中未获批，当前出裸链",
+      "require_offers": true,
+      "entry_probe": {
+        "promo": "403 Cloudflare 人机验证",
+        "pricing": "403 Cloudflare 人机验证",
+        "feed": "200 仅 sitemap 索引，无价格",
+        "blog": "403 Cloudflare 人机验证"
+      }
+    },
+    "inmotion": {
+      "name": "InMotion Hosting",
+      "homepage": "https://www.inmotionhosting.com/",
+      "source_url": "https://www.inmotionhosting.com/vps-hosting",
+      "url": "",
+      "terms_url": "https://www.inmotionhosting.com/legal/hosting-affiliate-terms/",
+      "eligibility": "条款未禁止优惠站，仅要求遵守官方推广准则；联盟申请未提交，当前出裸链",
+      "require_offers": true,
+      "entry_probe": {
+        "promo": "404 /web-hosting-deals/",
+        "pricing": "200 命中 36 处价格",
+        "feed": "200 sitemap 无价格",
+        "blog": "200 无本期优惠价格"
+      }
+    },
+    "contabo": {
+      "name": "Contabo",
+      "homepage": "https://contabo.com/",
+      "source_url": "https://contabo.com/en/vps/",
+      "url": "",
+      "terms_url": "https://contabo.com/en/affiliate-program/",
+      "eligibility": "公开联盟页未禁止优惠站，详细资格指向 CJ 需登录；当前出裸链",
+      "require_offers": true,
+      "entry_probe": {
+        "promo": "404 /en/deals/",
+        "pricing": "200 命中 13 处价格",
+        "feed": "200 sitemap 无价格",
+        "blog": "404 /en/blog/"
+      }
+    },
+    "upcloud": {
+      "name": "UpCloud",
+      "homepage": "https://upcloud.com/",
+      "source_url": "https://upcloud.com/pricing/",
+      "url": "",
+      "terms_url": "https://upcloud.com/global/affiliate-program/",
+      "eligibility": "联盟页明示可发 promo code 并于 Tutorials/Reviews/Comparisons 使用，未禁止优惠站；申请未提交，当前出裸链",
+      "require_offers": true,
+      "entry_probe": {
+        "promo": "200 无价格数字",
+        "pricing": "200 命中 427 处价格",
+        "feed": "404",
+        "blog": "200 无价格数字"
+      }
+    },
+    "ultahost": {
+      "name": "UltaHost",
+      "homepage": "https://ultahost.com/",
+      "source_url": "https://ultahost.com/vps-hosting",
+      "url": "",
+      "terms_url": "https://ultahost.com/affiliate-program-agreement",
+      "eligibility": "条款未禁止优惠站，仅要求使用官方素材；申请未提交，当前出裸链",
+      "require_offers": true,
+      "entry_probe": {
+        "promo": "404 /deals",
+        "pricing": "200 命中 22 处价格",
+        "feed": "200 sitemap 无价格",
+        "blog": "200 命中 4 处价格"
+      }
+    },
+    "hostpapa": {
+      "name": "HostPapa",
+      "homepage": "https://www.hostpapa.com/",
+      "source_url": "https://www.hostpapa.com/web-hosting-plan/vps-hosting/",
+      "url": "",
+      "terms_url": "https://www.hostpapa.com/about-hostpapa/affiliates/",
+      "eligibility": "联盟页提供 Dedicated Coupon Codes 且允许向客户发券，仅禁品牌词竞价；申请未提交，当前出裸链",
+      "require_offers": true,
+      "entry_probe": {
+        "promo": "404 /promotions/",
+        "pricing": "200 仅起价 4 处",
+        "feed": "200 sitemap 无价格",
+        "blog": "200 无价格"
+      }
+    },
+    "knownhost": {
+      "name": "KnownHost",
+      "homepage": "https://www.knownhost.com/",
+      "source_url": "https://www.knownhost.com/vps-hosting",
+      "url": "",
+      "terms_url": "https://www.knownhost.com/affiliate",
+      "eligibility": "公开联盟页未禁止优惠站，未见专用条款全文；当前出裸链",
+      "require_offers": true,
+      "entry_probe": {
+        "promo": "404 /promotions",
+        "pricing": "200 仅起价 2 处",
+        "feed": "200 sitemap 无价格",
+        "blog": "200 无价格"
+      }
     }
   },
   "_comments": {
     "provider_expansion_reviewed_at": "2026-09-10",
-    "screening_rule": "允许优惠站且禁止品牌词竞价仍放行；条款不全暂缓，不视为排除。公开数据抓取失败不生成新增空壳页。",
-    "excluded_or_pending": [
-      {
-        "name": "Namecheap",
-        "status": "条款放行，申请未提交",
-        "reason": "官方条款接受优惠站；禁止品牌词竞价不再是拒收理由。新增页面须有本次成功抓取的真实报价。",
-        "source": "https://www.namecheap.com/legal/affiliate-program/affiliate-agreement/"
-      },
+    "screening_rule": "只认厂商官网自己的联盟条款页原文。条款未禁止 coupon/deal/discount 站即放行；明确禁止或需事先书面批准的不收录。品牌词竞价禁令不再作为拒收理由。未获批联盟链接一律留空出裸链。公开数据抓取失败不生成新增空壳页。",
+    "screening_evidence": [
       {
         "name": "Hostinger",
-        "status": "不收录：需书面批准",
-        "reason": "优惠/折扣推广须事先批准，品牌词竞价也须批准。",
+        "status": "不收录：需事先批准",
+        "evidence": "Offering price savings methods, including coupon(s), voucher(s), discount codes, or added value offers without our prior approval;",
         "source": "https://www.hostinger.com/legal/affiliate-program-agreement"
-      },
-      {
-        "name": "HostGator",
-        "status": "不收录：抓不到",
-        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
-        "source": "https://www.hostgator.com/affiliates"
-      },
-      {
-        "name": "Bluehost",
-        "status": "不收录：抓不到",
-        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
-        "source": "https://www.bluehost.com/affiliates"
-      },
-      {
-        "name": "DreamHost",
-        "status": "条款放行，申请未提交",
-        "reason": "官方条款接受优惠站；禁止品牌词竞价不再是拒收理由。新增页面须有本次成功抓取的真实报价。",
-        "source": "https://www.dreamhost.com/legal/tune-terms-and-conditions/"
-      },
-      {
-        "name": "InMotion",
-        "status": "不收录：抓不到",
-        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
-        "source": "https://www.inmotionhosting.com/affiliates"
-      },
-      {
-        "name": "GreenGeeks",
-        "status": "不收录：需书面批准",
-        "reason": "现金返还、降价优惠券、奖励或激励须书面批准；优惠码可能覆盖联盟追踪。",
-        "source": "https://www.greengeeks.com/legal/atoc/"
-      },
-      {
-        "name": "ScalaHosting",
-        "status": "不收录：现站不满足",
-        "reason": "排除仅优惠促销且无至少 1000 字符评测/对比/介绍的网站；品牌词竞价禁止。",
-        "source": "https://www.scalahosting.com/affiliate.html"
-      },
-      {
-        "name": "KnownHost",
-        "status": "不收录：未核实",
-        "reason": "官方现金联盟入口存在，但本次官网资料未取得优惠站适用的完整联盟条款。",
-        "source": "https://www.knownhost.com/affiliate"
-      },
-      {
-        "name": "Liquid Web",
-        "status": "不收录：抓不到",
-        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
-        "source": "https://www.liquidweb.com/partners/affiliate/"
-      },
-      {
-        "name": "Cloudways",
-        "status": "不收录：抓不到",
-        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
-        "source": "https://www.cloudways.com/en/web-hosting-affiliate-program.php"
-      },
-      {
-        "name": "Kinsta",
-        "status": "排除",
-        "reason": "条款禁止在 coupon websites 放链接或提及 Kinsta。",
-        "source": "https://kinsta.com/legal/affiliate-terms/"
-      },
-      {
-        "name": "SiteGround",
-        "status": "不收录：未核实",
-        "reason": "官方现金联盟存在，条款请求 200 但提取不到正文，不能据状态码判断允许优惠站。",
-        "source": "https://world.siteground.com/viewtos/legal_notice?scid=2&lang=en"
-      },
-      {
-        "name": "FastComet",
-        "status": "排除",
-        "reason": "条款限制优惠促销页面标题、描述、URL及以价格激励吸流；不能仅据营销 FAQ 的可分享优惠码放行。",
-        "source": "https://www.fastcomet.com/terms/affiliate"
-      },
-      {
-        "name": "ChemiCloud",
-        "status": "不收录：需批准",
-        "reason": "所有优惠或评测网站必须在宣传前获批准。",
-        "source": "https://chemicloud.com/affiliates-terms-of-service"
-      },
-      {
-        "name": "HostArmada",
-        "status": "排除",
-        "reason": "禁止优惠相关词出现在域名、URL、元数据、标题和描述，并限制价格激励。",
-        "source": "https://hostarmada.com/terms-of-service/affiliate-program/"
-      },
-      {
-        "name": "InterServer",
-        "status": "不收录：抓不到",
-        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
-        "source": "https://www.interserver.net/affiliate.html"
-      },
-      {
-        "name": "Contabo",
-        "status": "不收录：条款不全",
-        "reason": "官网将详细资格条件指向 CJ；未登录；公开页同时禁止品牌词竞价。",
-        "source": "https://contabo.com/en/affiliate-program/"
-      },
-      {
-        "name": "Hostwinds",
-        "status": "不收录：抓不到",
-        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
-        "source": "https://www.hostwinds.com/affiliates"
-      },
-      {
-        "name": "HostPapa",
-        "status": "不收录：未核实",
-        "reason": "官方页面允许分享 coupons，但未取得完整专用联盟条款，不能直接视为白名单。",
-        "source": "https://www.hostpapa.com/about-hostpapa/affiliates/"
       },
       {
         "name": "IONOS",
         "status": "排除",
-        "reason": "4.7.9 禁止 coupon、discount、cashback、refund、rewards site。",
+        "evidence": "use the Links or otherwise promote IONOS or the IONOS Services using or in connection with any coupon, discount, cashback, refund, or other rewards site.",
         "source": "https://affiliate.ionos.com/terms"
       },
       {
         "name": "RoseHosting",
         "status": "排除",
-        "reason": "明确不接受 coupon-only sites；优惠促销为主要手段可被停号。",
+        "evidence": "RoseHosting does not accept \"coupon-only\" sites in our affiliate program.",
         "source": "https://www.rosehosting.com/affiliate-program/affiliate-tos/"
       },
       {
-        "name": "AccuWeb",
-        "status": "不收录：抓不到",
-        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
-        "source": "https://www.accuwebhosting.com/affiliate-program"
+        "name": "ChemiCloud",
+        "status": "不收录：需批准",
+        "evidence": "ChemiCloud must approve all coupon or review websites prior to any ChemiCloud affiliate information being advertised.",
+        "source": "https://chemicloud.com/affiliates-terms-of-service"
       },
       {
-        "name": "NameHero",
-        "status": "不收录：抓不到",
-        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
-        "source": "https://www.namehero.com/affiliate"
-      },
-      {
-        "name": "MilesWeb",
-        "status": "不收录：抓不到",
-        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
-        "source": "https://www.milesweb.com/affiliates.php"
-      },
-      {
-        "name": "Ultahost",
-        "status": "不收录：未核实",
-        "reason": "官方联盟页可访问；专用协议抓取超时，未完成硬线二。",
-        "source": "https://ultahost.com/affiliate-program-agreement"
-      },
-      {
-        "name": "RackNerd",
+        "name": "FastComet",
         "status": "排除",
-        "reason": "限制优惠词元数据及主要依赖价格激励流量的页面/网站/域名。",
-        "source": "https://www.racknerd.com/affiliates-terms-of-service"
+        "evidence": "Usage of the following words in the URL, title, metadata, and page description is prohibited: \"coupon\", \"discount\", \"offer\", \"promo or promotion\", \"cashback\", \"% off or OFF %\"",
+        "source": "https://www.fastcomet.com/terms/affiliate"
+      },
+      {
+        "name": "GreenGeeks",
+        "status": "不收录：需书面批准",
+        "evidence": "Advertising Compliance: Affiliates may not offer cash back, rate reducing coupons, rewards or incentives without written approval.",
+        "source": "https://www.greengeeks.com/legal/atoc/"
       },
       {
         "name": "Kamatera",
         "status": "排除",
-        "reason": "禁止在主要发布优惠码的网站推广；主要围绕 deals 的站可能被判 coupon site。",
+        "evidence": "Affiliates may not promote KAMATERA/VPSserver.com on websites primarily focused on distributing coupon or promotional codes.",
         "source": "https://www.kamatera.com/affiliate-terms/"
+      },
+      {
+        "name": "RackNerd",
+        "status": "排除",
+        "evidence": "Promotional pages mentioning RackNerd are not permitted to promote or suggest vouchers, coupons, cash-back offers, discount codes, or similar monetary incentives within their Metadata, Title, and URL address.",
+        "source": "https://www.racknerd.com/affiliates-terms-of-service"
+      },
+      {
+        "name": "ScalaHosting",
+        "status": "不收录：现站不满足",
+        "evidence": "Sites that are only offering coupon codes and promotions and do not have blog and/or review section where ScalaHosting is featured with review, comparison or description containing minimum 1000 (one-thousand) characters",
+        "source": "https://www.scalahosting.com/affiliate.html"
+      },
+      {
+        "name": "Kinsta",
+        "status": "排除",
+        "evidence": "条款禁止在 coupon websites 放链接或提及 Kinsta。",
+        "source": "https://kinsta.com/legal/affiliate-terms/"
+      },
+      {
+        "name": "DigitalOcean / Awin",
+        "status": "排除",
+        "evidence": "Awin 商家条款明确禁止 Coupon, deal, and discount affiliates。",
+        "source": "https://ui.awin.com/merchant-profile-terms/123996"
+      },
+      {
+        "name": "Namecheap",
+        "status": "条款放行，本期抓不到",
+        "evidence": "官方条款接受优惠站；但全站 Cloudflare 人机验证，四类入口中三类 403，仅 sitemap 索引可访问且无价格。",
+        "source": "https://www.namecheap.com/legal/affiliate-program/affiliate-agreement/"
+      }
+    ],
+    "unreachable_this_round": [
+      {
+        "name": "HostGator / Bluehost / Liquid Web / InterServer / MilesWeb / Atlantic.Net",
+        "status": "本期无法访问",
+        "reason": "HTTP 403，未取得条款原文；不推断有联盟，也不推断允许优惠站。",
+        "source": "各自官网 /affiliates"
+      },
+      {
+        "name": "A2 Hosting",
+        "status": "本期不适用",
+        "reason": "www.a2hosting.com 全部请求重定向至 hosting.com，未取得独立联盟条款。",
+        "source": "https://www.a2hosting.com/legal/affiliate-agreement"
+      },
+      {
+        "name": "Verpex / TMDHosting / Time4VPS / NameHero",
+        "status": "本期无法访问",
+        "reason": "SSL 握手超时或连接失败，未取得条款与价格原文。",
+        "source": "各自官网联盟页"
       }
     ],
     "previous_decisions": {
@@ -208,6 +228,7 @@
   "BOUNDARY": [
     "永久禁止品牌词竞价：站上任何页面不做品牌词竞价，不买任何厂商的品牌词。",
     "不投放任何广告。",
-    "无真实联盟链接时使用官方直链，不伪造追踪参数。"
+    "无真实联盟链接时使用官方直链，不伪造追踪参数。",
+    "抓不到 price 的条目不写 price 字段，不用估算值填充。"
   ]
 }
