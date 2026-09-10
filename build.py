@@ -27,7 +27,7 @@ def build():
     paths = []
     def page(path, template, title, **kw):
         body = Template((ROOT/'templates'/template).read_text()).substitute(**kw)
-        html = Template((ROOT/'templates/base.html').read_text()).substitute(title=esc(title), body=body, updated=esc(stamp), canonical=BASE+'/'+path)
+        html = Template((ROOT/'templates/base.html').read_text()).substitute(title=esc(title), body=body, updated=esc(stamp), canonical=BASE+'/'+path+('/' if path else ''))
         target = OUT/path/'index.html'; target.parent.mkdir(parents=True, exist_ok=True); target.write_text(html)
         paths.append('/'+path+('/' if path else ''))
     status_labels = {'ok':'已核验', 'no_verified_offer':'未提取到可核验优惠', 'unavailable':'本次无法访问'}
