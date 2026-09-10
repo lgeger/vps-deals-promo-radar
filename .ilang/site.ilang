@@ -5,5 +5,186 @@
       "terms_url": "https://console.vultr.com/referral/tos/",
       "verified_at": "2026-09-10"
     }
+  },
+  "_comments": {
+    "provider_expansion_reviewed_at": "2026-09-10",
+    "screening_rule": "需要官方现金联盟、优惠站条款通过；按本轮原文，品牌词竞价禁令亦排除。未确认或需特批均不进入新增 PROVIDERS。",
+    "excluded_or_pending": [
+      {
+        "name": "Namecheap",
+        "status": "口径待确认",
+        "reason": "优惠站可参加但品牌词竞价禁止；仅用联盟专供优惠码；当前自动抓取 403，不能作为稳定数据源。",
+        "source": "https://www.namecheap.com/legal/affiliate-program/affiliate-agreement/"
+      },
+      {
+        "name": "Hostinger",
+        "status": "不收录：需书面批准",
+        "reason": "优惠/折扣推广须事先批准，品牌词竞价也须批准。",
+        "source": "https://www.hostinger.com/legal/affiliate-program-agreement"
+      },
+      {
+        "name": "HostGator",
+        "status": "不收录：抓不到",
+        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
+        "source": "https://www.hostgator.com/affiliates"
+      },
+      {
+        "name": "Bluehost",
+        "status": "不收录：抓不到",
+        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
+        "source": "https://www.bluehost.com/affiliates"
+      },
+      {
+        "name": "DreamHost",
+        "status": "口径待确认",
+        "reason": "明确接受优惠站（须初审及持续批准），但禁止品牌词竞价；收款仅 Direct Bank Transfer，需要另核实收款条件。",
+        "source": "https://www.dreamhost.com/legal/tune-terms-and-conditions/"
+      },
+      {
+        "name": "InMotion",
+        "status": "不收录：抓不到",
+        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
+        "source": "https://www.inmotionhosting.com/affiliates"
+      },
+      {
+        "name": "GreenGeeks",
+        "status": "不收录：需书面批准",
+        "reason": "现金返还、降价优惠券、奖励或激励须书面批准；优惠码可能覆盖联盟追踪。",
+        "source": "https://www.greengeeks.com/legal/atoc/"
+      },
+      {
+        "name": "ScalaHosting",
+        "status": "不收录：现站不满足",
+        "reason": "排除仅优惠促销且无至少 1000 字符评测/对比/介绍的网站；品牌词竞价禁止。",
+        "source": "https://www.scalahosting.com/affiliate.html"
+      },
+      {
+        "name": "KnownHost",
+        "status": "不收录：未核实",
+        "reason": "官方现金联盟入口存在，但本次官网资料未取得优惠站适用的完整联盟条款。",
+        "source": "https://www.knownhost.com/affiliate"
+      },
+      {
+        "name": "Liquid Web",
+        "status": "不收录：抓不到",
+        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
+        "source": "https://www.liquidweb.com/partners/affiliate/"
+      },
+      {
+        "name": "Cloudways",
+        "status": "不收录：抓不到",
+        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
+        "source": "https://www.cloudways.com/en/web-hosting-affiliate-program.php"
+      },
+      {
+        "name": "Kinsta",
+        "status": "排除",
+        "reason": "条款禁止在 coupon websites 放链接或提及 Kinsta。",
+        "source": "https://kinsta.com/legal/affiliate-terms/"
+      },
+      {
+        "name": "SiteGround",
+        "status": "不收录：未核实",
+        "reason": "官方现金联盟存在，条款请求 200 但提取不到正文，不能据状态码判断允许优惠站。",
+        "source": "https://world.siteground.com/viewtos/legal_notice?scid=2&lang=en"
+      },
+      {
+        "name": "FastComet",
+        "status": "排除",
+        "reason": "条款限制优惠促销页面标题、描述、URL及以价格激励吸流；不能仅据营销 FAQ 的可分享优惠码放行。",
+        "source": "https://www.fastcomet.com/terms/affiliate"
+      },
+      {
+        "name": "ChemiCloud",
+        "status": "不收录：需批准",
+        "reason": "所有优惠或评测网站必须在宣传前获批准。",
+        "source": "https://chemicloud.com/affiliates-terms-of-service"
+      },
+      {
+        "name": "HostArmada",
+        "status": "排除",
+        "reason": "禁止优惠相关词出现在域名、URL、元数据、标题和描述，并限制价格激励。",
+        "source": "https://hostarmada.com/terms-of-service/affiliate-program/"
+      },
+      {
+        "name": "InterServer",
+        "status": "不收录：抓不到",
+        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
+        "source": "https://www.interserver.net/affiliate.html"
+      },
+      {
+        "name": "Contabo",
+        "status": "不收录：条款不全",
+        "reason": "官网将详细资格条件指向 CJ；未登录；公开页同时禁止品牌词竞价。",
+        "source": "https://contabo.com/en/affiliate-program/"
+      },
+      {
+        "name": "Hostwinds",
+        "status": "不收录：抓不到",
+        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
+        "source": "https://www.hostwinds.com/affiliates"
+      },
+      {
+        "name": "HostPapa",
+        "status": "不收录：未核实",
+        "reason": "官方页面允许分享 coupons，但未取得完整专用联盟条款，不能直接视为白名单。",
+        "source": "https://www.hostpapa.com/about-hostpapa/affiliates/"
+      },
+      {
+        "name": "IONOS",
+        "status": "排除",
+        "reason": "4.7.9 禁止 coupon、discount、cashback、refund、rewards site。",
+        "source": "https://affiliate.ionos.com/terms"
+      },
+      {
+        "name": "RoseHosting",
+        "status": "排除",
+        "reason": "明确不接受 coupon-only sites；优惠促销为主要手段可被停号。",
+        "source": "https://www.rosehosting.com/affiliate-program/affiliate-tos/"
+      },
+      {
+        "name": "AccuWeb",
+        "status": "不收录：抓不到",
+        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
+        "source": "https://www.accuwebhosting.com/affiliate-program"
+      },
+      {
+        "name": "NameHero",
+        "status": "不收录：抓不到",
+        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
+        "source": "https://www.namehero.com/affiliate"
+      },
+      {
+        "name": "MilesWeb",
+        "status": "不收录：抓不到",
+        "reason": "本次官方入口或官网请求失败；不能推断没有联盟，也不能推断允许优惠站。",
+        "source": "https://www.milesweb.com/affiliates.php"
+      },
+      {
+        "name": "Ultahost",
+        "status": "不收录：未核实",
+        "reason": "官方联盟页可访问；专用协议抓取超时，未完成硬线二。",
+        "source": "https://ultahost.com/affiliate-program-agreement"
+      },
+      {
+        "name": "RackNerd",
+        "status": "排除",
+        "reason": "限制优惠词元数据及主要依赖价格激励流量的页面/网站/域名。",
+        "source": "https://www.racknerd.com/affiliates-terms-of-service"
+      },
+      {
+        "name": "Kamatera",
+        "status": "排除",
+        "reason": "禁止在主要发布优惠码的网站推广；主要围绕 deals 的站可能被判 coupon site。",
+        "source": "https://www.kamatera.com/affiliate-terms/"
+      }
+    ],
+    "previous_decisions": {
+      "ovhcloud": "沿用：未确认适合个人的现金计划",
+      "akamai": "沿用：服务抵扣而非现金",
+      "hetzner": "沿用：联盟计划停止",
+      "digitalocean": "沿用：排除优惠站"
+    },
+    "existing_vultr": "现有配置与出口保持不变；当前普通推荐每名合格客户 $10，不与另一 $100 活动混写。"
   }
 }
