@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T20:57:42+00:00",
+  "updated_at": "2026-09-14T21:55:11+00:00",
   "offers": [
     {
       "name": "VPS-1",
@@ -13,10 +13,10 @@
       "provider": "ovhcloud",
       "offer_url": "https://www.ovhcloud.com/en/vps/",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "a2d82d09e5ba856f51c5505a8862ce9828b71be1aa1480640cbd1757a7ce54ce"
+      "source_sha256": "dadd2c0c094190b582fa7445355ec7e37ccc2ef2df2c2a36c30aa5309fb49825"
     },
     {
       "name": "VPS-2",
@@ -30,10 +30,10 @@
       "provider": "ovhcloud",
       "offer_url": "https://www.ovhcloud.com/en/vps/",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "a2d82d09e5ba856f51c5505a8862ce9828b71be1aa1480640cbd1757a7ce54ce"
+      "source_sha256": "dadd2c0c094190b582fa7445355ec7e37ccc2ef2df2c2a36c30aa5309fb49825"
     },
     {
       "name": "VPS-3",
@@ -47,10 +47,10 @@
       "provider": "ovhcloud",
       "offer_url": "https://www.ovhcloud.com/en/vps/",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "a2d82d09e5ba856f51c5505a8862ce9828b71be1aa1480640cbd1757a7ce54ce"
+      "source_sha256": "dadd2c0c094190b582fa7445355ec7e37ccc2ef2df2c2a36c30aa5309fb49825"
     },
     {
       "name": "VPS-4",
@@ -64,10 +64,10 @@
       "provider": "ovhcloud",
       "offer_url": "https://www.ovhcloud.com/en/vps/",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "a2d82d09e5ba856f51c5505a8862ce9828b71be1aa1480640cbd1757a7ce54ce"
+      "source_sha256": "dadd2c0c094190b582fa7445355ec7e37ccc2ef2df2c2a36c30aa5309fb49825"
     },
     {
       "name": "DreamHost Stack 4",
@@ -81,10 +81,10 @@
       "provider": "dreamhost",
       "offer_url": "https://www.dreamhost.com/hosting/vps/",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "897a5a9e488b0a80c9ec162a6b6afcc92fd053910dcae542e033898b632b4c6c"
+      "source_sha256": "3dcb2ffb290b67aaa2f50fd19d14c75d014d8743a699c4a32b1e6454d5cd2a4e"
     },
     {
       "name": "DreamHost Stack 8",
@@ -98,10 +98,10 @@
       "provider": "dreamhost",
       "offer_url": "https://www.dreamhost.com/hosting/vps/",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "897a5a9e488b0a80c9ec162a6b6afcc92fd053910dcae542e033898b632b4c6c"
+      "source_sha256": "3dcb2ffb290b67aaa2f50fd19d14c75d014d8743a699c4a32b1e6454d5cd2a4e"
     },
     {
       "name": "DreamHost Stack 16",
@@ -115,10 +115,10 @@
       "provider": "dreamhost",
       "offer_url": "https://www.dreamhost.com/hosting/vps/",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "897a5a9e488b0a80c9ec162a6b6afcc92fd053910dcae542e033898b632b4c6c"
+      "source_sha256": "3dcb2ffb290b67aaa2f50fd19d14c75d014d8743a699c4a32b1e6454d5cd2a4e"
     },
     {
       "name": "DreamHost Stack 32",
@@ -132,10 +132,10 @@
       "provider": "dreamhost",
       "offer_url": "https://www.dreamhost.com/hosting/vps/",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "897a5a9e488b0a80c9ec162a6b6afcc92fd053910dcae542e033898b632b4c6c"
+      "source_sha256": "3dcb2ffb290b67aaa2f50fd19d14c75d014d8743a699c4a32b1e6454d5cd2a4e"
     },
     {
       "name": "InMotion VPS 4 vCPU",
@@ -149,10 +149,10 @@
       "provider": "inmotion",
       "offer_url": "https://www.inmotionhosting.com/vps-hosting",
       "source_url": "https://www.inmotionhosting.com/vps-hosting",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "21a18ebc55d9c22406154b75ab8bc8d5c1939f82710842cb565f791df142a30d"
+      "source_sha256": "c0b74ca5095cf88ba6cef309fd37ca71a548bd726b21a3b2c90734df9d8cddfa"
     },
     {
       "name": "InMotion VPS 8 vCPU",
@@ -166,10 +166,10 @@
       "provider": "inmotion",
       "offer_url": "https://www.inmotionhosting.com/vps-hosting",
       "source_url": "https://www.inmotionhosting.com/vps-hosting",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "21a18ebc55d9c22406154b75ab8bc8d5c1939f82710842cb565f791df142a30d"
+      "source_sha256": "c0b74ca5095cf88ba6cef309fd37ca71a548bd726b21a3b2c90734df9d8cddfa"
     },
     {
       "name": "InMotion VPS 12 vCPU",
@@ -183,10 +183,10 @@
       "provider": "inmotion",
       "offer_url": "https://www.inmotionhosting.com/vps-hosting",
       "source_url": "https://www.inmotionhosting.com/vps-hosting",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "21a18ebc55d9c22406154b75ab8bc8d5c1939f82710842cb565f791df142a30d"
+      "source_sha256": "c0b74ca5095cf88ba6cef309fd37ca71a548bd726b21a3b2c90734df9d8cddfa"
     },
     {
       "name": "InMotion VPS 16 vCPU",
@@ -200,10 +200,10 @@
       "provider": "inmotion",
       "offer_url": "https://www.inmotionhosting.com/vps-hosting",
       "source_url": "https://www.inmotionhosting.com/vps-hosting",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "21a18ebc55d9c22406154b75ab8bc8d5c1939f82710842cb565f791df142a30d"
+      "source_sha256": "c0b74ca5095cf88ba6cef309fd37ca71a548bd726b21a3b2c90734df9d8cddfa"
     },
     {
       "name": "UpCloud Cloud Server Standard",
@@ -217,10 +217,10 @@
       "provider": "upcloud",
       "offer_url": "https://upcloud.com/pricing/",
       "source_url": "https://upcloud.com/pricing/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "5c49c1ee16d867d5fbb57595d090a9c3415c5c3de1f824c8a9225a5dc8538013"
+      "source_sha256": "d5a3c8f6be6efe6b0ae9494e15e251f907fb864a3b2f360e928994bc687fd74a"
     },
     {
       "name": "UpCloud Cloud Server MaxIOPS",
@@ -234,10 +234,10 @@
       "provider": "upcloud",
       "offer_url": "https://upcloud.com/pricing/",
       "source_url": "https://upcloud.com/pricing/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "5c49c1ee16d867d5fbb57595d090a9c3415c5c3de1f824c8a9225a5dc8538013"
+      "source_sha256": "d5a3c8f6be6efe6b0ae9494e15e251f907fb864a3b2f360e928994bc687fd74a"
     },
     {
       "name": "UpCloud Cloud Server 灵活计费",
@@ -251,10 +251,10 @@
       "provider": "upcloud",
       "offer_url": "https://upcloud.com/pricing/",
       "source_url": "https://upcloud.com/pricing/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "5c49c1ee16d867d5fbb57595d090a9c3415c5c3de1f824c8a9225a5dc8538013"
+      "source_sha256": "d5a3c8f6be6efe6b0ae9494e15e251f907fb864a3b2f360e928994bc687fd74a"
     },
     {
       "name": "HostPapa VPS Hosting",
@@ -268,10 +268,10 @@
       "provider": "hostpapa",
       "offer_url": "https://www.hostpapa.com/web-hosting-plan/vps-hosting/",
       "source_url": "https://www.hostpapa.com/web-hosting-plan/vps-hosting/",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "e064834351aebe5ecb3b966408c9fb243d9a070a72084a3eff469c528940b4e3"
+      "source_sha256": "e4033867564b5bb3392d9fb5767990cdee0e0608311511db59c4a12f2f6dbdaf"
     },
     {
       "name": "KnownHost Managed VPS",
@@ -285,10 +285,10 @@
       "provider": "knownhost",
       "offer_url": "https://www.knownhost.com/vps-hosting",
       "source_url": "https://www.knownhost.com/vps-hosting",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "61da2e614bfe3239a003993267575e91adad35d70f594c022f8cf19041b15a36"
+      "source_sha256": "a8d446421ce6294af9f4c8f8652c4fd00b49e86c1dd5b6593aba3e55c3f8fc9a"
     },
     {
       "name": "KnownHost Unmanaged VPS",
@@ -302,24 +302,24 @@
       "provider": "knownhost",
       "offer_url": "https://www.knownhost.com/vps-hosting",
       "source_url": "https://www.knownhost.com/vps-hosting",
-      "verified_at": "2026-09-13T20:57:42+00:00",
+      "verified_at": "2026-09-14T21:55:11+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "61da2e614bfe3239a003993267575e91adad35d70f594c022f8cf19041b15a36"
+      "source_sha256": "a8d446421ce6294af9f4c8f8652c4fd00b49e86c1dd5b6593aba3e55c3f8fc9a"
     }
   ],
   "checks": [
     {
       "provider": "ovhcloud",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "ok",
       "count": 4
     },
     {
       "provider": "akamai",
       "source_url": "https://www.linode.com/",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "unavailable",
       "count": 0,
       "error": "HTTP Error 403: Forbidden"
@@ -327,14 +327,14 @@
     {
       "provider": "hetzner",
       "source_url": "https://www.hetzner.com/cloud",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "no_verified_offer",
       "count": 0
     },
     {
       "provider": "vultr",
       "source_url": "https://www.vultr.com/",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "unavailable",
       "count": 0,
       "error": "HTTP Error 403: Forbidden"
@@ -342,21 +342,21 @@
     {
       "provider": "digitalocean",
       "source_url": "https://www.digitalocean.com/",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "no_verified_offer",
       "count": 0
     },
     {
       "provider": "dreamhost",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "ok",
       "count": 4
     },
     {
       "provider": "namecheap",
       "source_url": "https://www.namecheap.com/hosting/vps/",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "unavailable",
       "count": 0,
       "error": "HTTP Error 403: Forbidden"
@@ -364,14 +364,14 @@
     {
       "provider": "inmotion",
       "source_url": "https://www.inmotionhosting.com/vps-hosting",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "ok",
       "count": 4
     },
     {
       "provider": "contabo",
       "source_url": "https://contabo.com/en/vps/",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "unavailable",
       "count": 0,
       "error": "HTTP Error 403: Forbidden"
@@ -379,14 +379,14 @@
     {
       "provider": "upcloud",
       "source_url": "https://upcloud.com/pricing/",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "ok",
       "count": 3
     },
     {
       "provider": "ultahost",
       "source_url": "https://ultahost.com/vps-hosting",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "unavailable",
       "count": 0,
       "error": "HTTP Error 403: Forbidden"
@@ -394,14 +394,14 @@
     {
       "provider": "hostpapa",
       "source_url": "https://www.hostpapa.com/web-hosting-plan/vps-hosting/",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "ok",
       "count": 1
     },
     {
       "provider": "knownhost",
       "source_url": "https://www.knownhost.com/vps-hosting",
-      "checked_at": "2026-09-13T20:57:42+00:00",
+      "checked_at": "2026-09-14T21:55:11+00:00",
       "status": "ok",
       "count": 2
     }
