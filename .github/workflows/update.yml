@@ -21,6 +21,8 @@ jobs:
         run: |
           python scraper.py
           python build.py
+      - name: Block snapshots that drop previously verified offers
+        run: python snapshot_guard.py
       - name: Publish snapshot
         run: |
           git config user.name 'github-actions[bot]'

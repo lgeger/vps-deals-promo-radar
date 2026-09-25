@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T21:37:40+00:00",
+  "updated_at": "2026-09-25T07:49:18+00:00",
   "offers": [
     {
       "name": "VPS-1",
@@ -13,7 +13,7 @@
       "provider": "ovhcloud",
       "offer_url": "https://www.ovhcloud.com/en/vps/",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
       "source_sha256": "49392038fe5edaf8be05ca53d96a38e374d46fbf0ffd09d4d49ee17251efecb9"
@@ -30,7 +30,7 @@
       "provider": "ovhcloud",
       "offer_url": "https://www.ovhcloud.com/en/vps/",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
       "source_sha256": "49392038fe5edaf8be05ca53d96a38e374d46fbf0ffd09d4d49ee17251efecb9"
@@ -47,7 +47,7 @@
       "provider": "ovhcloud",
       "offer_url": "https://www.ovhcloud.com/en/vps/",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
       "source_sha256": "49392038fe5edaf8be05ca53d96a38e374d46fbf0ffd09d4d49ee17251efecb9"
@@ -64,7 +64,7 @@
       "provider": "ovhcloud",
       "offer_url": "https://www.ovhcloud.com/en/vps/",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
       "source_sha256": "49392038fe5edaf8be05ca53d96a38e374d46fbf0ffd09d4d49ee17251efecb9"
@@ -81,10 +81,10 @@
       "provider": "dreamhost",
       "offer_url": "https://www.dreamhost.com/hosting/vps/",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "6fa1e4bad6daf89ae3430bf19d6e20c38eb9092c05b31cc6dfa93e992e9f9061"
+      "source_sha256": "ce8a3f4abff0281e5771df9c72ae25b3beb4f1cdb916e48ed0232f343a2732f4"
     },
     {
       "name": "DreamHost Stack 8",
@@ -98,10 +98,10 @@
       "provider": "dreamhost",
       "offer_url": "https://www.dreamhost.com/hosting/vps/",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "6fa1e4bad6daf89ae3430bf19d6e20c38eb9092c05b31cc6dfa93e992e9f9061"
+      "source_sha256": "ce8a3f4abff0281e5771df9c72ae25b3beb4f1cdb916e48ed0232f343a2732f4"
     },
     {
       "name": "DreamHost Stack 16",
@@ -115,10 +115,10 @@
       "provider": "dreamhost",
       "offer_url": "https://www.dreamhost.com/hosting/vps/",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "6fa1e4bad6daf89ae3430bf19d6e20c38eb9092c05b31cc6dfa93e992e9f9061"
+      "source_sha256": "ce8a3f4abff0281e5771df9c72ae25b3beb4f1cdb916e48ed0232f343a2732f4"
     },
     {
       "name": "DreamHost Stack 32",
@@ -132,10 +132,10 @@
       "provider": "dreamhost",
       "offer_url": "https://www.dreamhost.com/hosting/vps/",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "6fa1e4bad6daf89ae3430bf19d6e20c38eb9092c05b31cc6dfa93e992e9f9061"
+      "source_sha256": "ce8a3f4abff0281e5771df9c72ae25b3beb4f1cdb916e48ed0232f343a2732f4"
     },
     {
       "name": "InMotion VPS 4 vCPU",
@@ -149,7 +149,7 @@
       "provider": "inmotion",
       "offer_url": "https://www.inmotionhosting.com/vps-hosting",
       "source_url": "https://www.inmotionhosting.com/vps-hosting",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
       "source_sha256": "a6831298c3ced386dd07447482f4f72ec5eedc79a5675264b834e2c76be81a09"
@@ -166,7 +166,7 @@
       "provider": "inmotion",
       "offer_url": "https://www.inmotionhosting.com/vps-hosting",
       "source_url": "https://www.inmotionhosting.com/vps-hosting",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
       "source_sha256": "a6831298c3ced386dd07447482f4f72ec5eedc79a5675264b834e2c76be81a09"
@@ -183,7 +183,7 @@
       "provider": "inmotion",
       "offer_url": "https://www.inmotionhosting.com/vps-hosting",
       "source_url": "https://www.inmotionhosting.com/vps-hosting",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
       "source_sha256": "a6831298c3ced386dd07447482f4f72ec5eedc79a5675264b834e2c76be81a09"
@@ -200,10 +200,231 @@
       "provider": "inmotion",
       "offer_url": "https://www.inmotionhosting.com/vps-hosting",
       "source_url": "https://www.inmotionhosting.com/vps-hosting",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
       "source_sha256": "a6831298c3ced386dd07447482f4f72ec5eedc79a5675264b834e2c76be81a09"
+    },
+    {
+      "name": "Contabo Cloud VPS 4",
+      "kind": "listed_price",
+      "price": "5.50",
+      "currency": "EUR",
+      "billing_period": "month",
+      "evidence": "Cloud VPS 4 | €5.50 | 4 | 40 | / month",
+      "terms": "官方欧元标价：每月 €5.50；页面同行的具体配置数字本次未做可靠提取，配置以官方 VPS 页为准，税费、地区与期限以结账页为准。",
+      "id": "contabo-b85cfbbd19",
+      "provider": "contabo",
+      "offer_url": "https://contabo.com/en/vps/",
+      "source_url": "https://contabo.com/en/vps/",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "7d4d14b6f917542e1e616ea4be7ca6b6df9106d450e6127c103d36ae2ba1cff7"
+    },
+    {
+      "name": "Contabo Cloud VPS 6",
+      "kind": "listed_price",
+      "price": "7.50",
+      "currency": "EUR",
+      "billing_period": "month",
+      "evidence": "Cloud VPS 6 | €7.50 | 6 | 00 | / month",
+      "terms": "官方欧元标价：每月 €7.50；页面同行的具体配置数字本次未做可靠提取，配置以官方 VPS 页为准，税费、地区与期限以结账页为准。",
+      "id": "contabo-a6b04ca50d",
+      "provider": "contabo",
+      "offer_url": "https://contabo.com/en/vps/",
+      "source_url": "https://contabo.com/en/vps/",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "7d4d14b6f917542e1e616ea4be7ca6b6df9106d450e6127c103d36ae2ba1cff7"
+    },
+    {
+      "name": "Contabo Cloud VPS 8",
+      "kind": "listed_price",
+      "price": "14.00",
+      "currency": "EUR",
+      "billing_period": "month",
+      "evidence": "Cloud VPS 8 | €14.00 | 11 | 20 | / month",
+      "terms": "官方欧元标价：每月 €14.00；页面同行的具体配置数字本次未做可靠提取，配置以官方 VPS 页为准，税费、地区与期限以结账页为准。",
+      "id": "contabo-9e5984ea63",
+      "provider": "contabo",
+      "offer_url": "https://contabo.com/en/vps/",
+      "source_url": "https://contabo.com/en/vps/",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "7d4d14b6f917542e1e616ea4be7ca6b6df9106d450e6127c103d36ae2ba1cff7"
+    },
+    {
+      "name": "Contabo Cloud VPS 12",
+      "kind": "listed_price",
+      "price": "25.00",
+      "currency": "EUR",
+      "billing_period": "month",
+      "evidence": "Cloud VPS 12 | €25.00 | 20 | 00 | / month",
+      "terms": "官方欧元标价：每月 €25.00；页面同行的具体配置数字本次未做可靠提取，配置以官方 VPS 页为准，税费、地区与期限以结账页为准。",
+      "id": "contabo-e930b2a011",
+      "provider": "contabo",
+      "offer_url": "https://contabo.com/en/vps/",
+      "source_url": "https://contabo.com/en/vps/",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "7d4d14b6f917542e1e616ea4be7ca6b6df9106d450e6127c103d36ae2ba1cff7"
+    },
+    {
+      "name": "Contabo Cloud VPS 16",
+      "kind": "listed_price",
+      "price": "37.00",
+      "currency": "EUR",
+      "billing_period": "month",
+      "evidence": "Cloud VPS 16 | €37.00 | 29 | 60 | / month",
+      "terms": "官方欧元标价：每月 €37.00；页面同行的具体配置数字本次未做可靠提取，配置以官方 VPS 页为准，税费、地区与期限以结账页为准。",
+      "id": "contabo-a63dd4fb50",
+      "provider": "contabo",
+      "offer_url": "https://contabo.com/en/vps/",
+      "source_url": "https://contabo.com/en/vps/",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "7d4d14b6f917542e1e616ea4be7ca6b6df9106d450e6127c103d36ae2ba1cff7"
+    },
+    {
+      "name": "Contabo Cloud VPS 18",
+      "kind": "listed_price",
+      "price": "49.00",
+      "currency": "EUR",
+      "billing_period": "month",
+      "evidence": "Cloud VPS 18 | €49.00 | 39 | 20 | / month",
+      "terms": "官方欧元标价：每月 €49.00；页面同行的具体配置数字本次未做可靠提取，配置以官方 VPS 页为准，税费、地区与期限以结账页为准。",
+      "id": "contabo-4570faeafd",
+      "provider": "contabo",
+      "offer_url": "https://contabo.com/en/vps/",
+      "source_url": "https://contabo.com/en/vps/",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "7d4d14b6f917542e1e616ea4be7ca6b6df9106d450e6127c103d36ae2ba1cff7"
+    },
+    {
+      "name": "UpCloud Cloud Server Standard",
+      "kind": "listed_price",
+      "price": "3",
+      "currency": "EUR",
+      "billing_period": "month",
+      "evidence": "Standard performance SSD storage | Previous-gen AMD CPUs | IPv4 included | 99.99% SLA | Starting from | €3/mo | Global price",
+      "terms": "官方 Global 价目表该系列起价：每月 €3 起；同页另有更高配置档位，实际配置与地区价格以官方定价页为准。托管数据库、Kubernetes、对象存储等非 VPS 产品未收录。",
+      "id": "upcloud-82fb6c9fa4",
+      "provider": "upcloud",
+      "offer_url": "https://upcloud.com/pricing/",
+      "source_url": "https://upcloud.com/pricing/",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "c0da195909d21927cbe35dc1c27c836c1de57be09cb779100c2471cb9c1e2f6a"
+    },
+    {
+      "name": "UpCloud Cloud Server MaxIOPS",
+      "kind": "listed_price",
+      "price": "5",
+      "currency": "EUR",
+      "billing_period": "month",
+      "evidence": "MaxIOPS high performance storage | 1000 Mbps Internet & IPv4 included | Starting from | €5/mo | Global price",
+      "terms": "官方 Global 价目表该系列起价：每月 €5 起；同页另有更高配置档位，实际配置与地区价格以官方定价页为准。托管数据库、Kubernetes、对象存储等非 VPS 产品未收录。",
+      "id": "upcloud-1d222ad544",
+      "provider": "upcloud",
+      "offer_url": "https://upcloud.com/pricing/",
+      "source_url": "https://upcloud.com/pricing/",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "c0da195909d21927cbe35dc1c27c836c1de57be09cb779100c2471cb9c1e2f6a"
+    },
+    {
+      "name": "UpCloud Cloud Server 灵活计费",
+      "kind": "listed_price",
+      "price": "12",
+      "currency": "EUR",
+      "billing_period": "month",
+      "evidence": "Choice of MaxIOPS, Standard or Archive storage | 1000 Mbps Internet | Server stopped, no charges | 99.999% SLA | Transfer Included | Starting from | €12/mo | Global price",
+      "terms": "官方 Global 价目表该系列起价：每月 €12 起；同页另有更高配置档位，实际配置与地区价格以官方定价页为准。托管数据库、Kubernetes、对象存储等非 VPS 产品未收录。",
+      "id": "upcloud-c3f4cef94a",
+      "provider": "upcloud",
+      "offer_url": "https://upcloud.com/pricing/",
+      "source_url": "https://upcloud.com/pricing/",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "c0da195909d21927cbe35dc1c27c836c1de57be09cb779100c2471cb9c1e2f6a"
+    },
+    {
+      "name": "UltaHost VPS Basic",
+      "kind": "listed_price",
+      "price": "5.52",
+      "currency": "USD",
+      "billing_period": "month",
+      "evidence": "VPS Basic | Perfect affordable hosting for beginners. | $9.19 | Save 40% | $5.52 | /mo | Billed for 24 month term.",
+      "terms": "官方促销价：原价 $9.19，优惠 40% 后 24 个月期每月 $5.52；税费、续费与取消条件以官网订单页为准。",
+      "id": "ultahost-56addd98a1",
+      "provider": "ultahost",
+      "offer_url": "https://ultahost.com/vps-hosting",
+      "source_url": "https://ultahost.com/vps-hosting",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "4d61bc53e5cf92a2c731f5a4af39fe8b78a015858d35829066fc61784bf3e9f2"
+    },
+    {
+      "name": "UltaHost VPS Business",
+      "kind": "listed_price",
+      "price": "9.78",
+      "currency": "USD",
+      "billing_period": "month",
+      "evidence": "VPS Business | Strong hosting built for medium businesses. | $16.10 | Save 40% | $9.78 | /mo | Billed for 24 month term.",
+      "terms": "官方促销价：原价 $16.10，优惠 40% 后 24 个月期每月 $9.78；税费、续费与取消条件以官网订单页为准。",
+      "id": "ultahost-c808924cd6",
+      "provider": "ultahost",
+      "offer_url": "https://ultahost.com/vps-hosting",
+      "source_url": "https://ultahost.com/vps-hosting",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "4d61bc53e5cf92a2c731f5a4af39fe8b78a015858d35829066fc61784bf3e9f2"
+    },
+    {
+      "name": "UltaHost VPS Professional",
+      "kind": "listed_price",
+      "price": "15.87",
+      "currency": "USD",
+      "billing_period": "month",
+      "evidence": "VPS Professional | Advanced resources for expanding projects. | $26.22 | Save 40% | $15.87 | /mo | Billed for 24 month term.",
+      "terms": "官方促销价：原价 $26.22，优惠 40% 后 24 个月期每月 $15.87；税费、续费与取消条件以官网订单页为准。",
+      "id": "ultahost-aa78b33147",
+      "provider": "ultahost",
+      "offer_url": "https://ultahost.com/vps-hosting",
+      "source_url": "https://ultahost.com/vps-hosting",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "4d61bc53e5cf92a2c731f5a4af39fe8b78a015858d35829066fc61784bf3e9f2"
+    },
+    {
+      "name": "UltaHost VPS Enterprise",
+      "kind": "listed_price",
+      "price": "20.69",
+      "currency": "USD",
+      "billing_period": "month",
+      "evidence": "VPS Enterprise | The ultimate VPS tier with maximum resources before moving to VDS. | $34.49 | Save 40% | $20.69 | /mo | Billed for 24 month term.",
+      "terms": "官方促销价：原价 $34.49，优惠 40% 后 24 个月期每月 $20.69；税费、续费与取消条件以官网订单页为准。",
+      "id": "ultahost-ed655c1d67",
+      "provider": "ultahost",
+      "offer_url": "https://ultahost.com/vps-hosting",
+      "source_url": "https://ultahost.com/vps-hosting",
+      "verified_at": "2026-09-25T07:49:18+00:00",
+      "valid_from": null,
+      "valid_until": null,
+      "source_sha256": "4d61bc53e5cf92a2c731f5a4af39fe8b78a015858d35829066fc61784bf3e9f2"
     },
     {
       "name": "HostPapa VPS Hosting",
@@ -217,7 +438,7 @@
       "provider": "hostpapa",
       "offer_url": "https://www.hostpapa.com/web-hosting-plan/vps-hosting/",
       "source_url": "https://www.hostpapa.com/web-hosting-plan/vps-hosting/",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
       "source_sha256": "e4033867564b5bb3392d9fb5767990cdee0e0608311511db59c4a12f2f6dbdaf"
@@ -234,10 +455,10 @@
       "provider": "knownhost",
       "offer_url": "https://www.knownhost.com/vps-hosting",
       "source_url": "https://www.knownhost.com/vps-hosting",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "209593310904798b6b3a19dc8255669b9698752e2a4e74b18c16c4e2a8fb3257"
+      "source_sha256": "c17e77f433d7bde3d2a0ffb9ca93fc1fdb9941c648947fa4193aaaae1f7af2a2"
     },
     {
       "name": "KnownHost Unmanaged VPS",
@@ -251,24 +472,24 @@
       "provider": "knownhost",
       "offer_url": "https://www.knownhost.com/vps-hosting",
       "source_url": "https://www.knownhost.com/vps-hosting",
-      "verified_at": "2026-09-24T21:37:40+00:00",
+      "verified_at": "2026-09-25T07:49:18+00:00",
       "valid_from": null,
       "valid_until": null,
-      "source_sha256": "209593310904798b6b3a19dc8255669b9698752e2a4e74b18c16c4e2a8fb3257"
+      "source_sha256": "c17e77f433d7bde3d2a0ffb9ca93fc1fdb9941c648947fa4193aaaae1f7af2a2"
     }
   ],
   "checks": [
     {
       "provider": "ovhcloud",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "checked_at": "2026-09-24T21:37:40+00:00",
+      "checked_at": "2026-09-25T07:49:18+00:00",
       "status": "ok",
       "count": 4
     },
     {
       "provider": "akamai",
       "source_url": "https://www.linode.com/",
-      "checked_at": "2026-09-24T21:37:40+00:00",
+      "checked_at": "2026-09-25T07:49:18+00:00",
       "status": "unavailable",
       "count": 0,
       "error": "HTTP Error 403: Forbidden"
@@ -276,36 +497,36 @@
     {
       "provider": "hetzner",
       "source_url": "https://www.hetzner.com/cloud",
-      "checked_at": "2026-09-24T21:37:40+00:00",
+      "checked_at": "2026-09-25T07:49:18+00:00",
       "status": "no_verified_offer",
       "count": 0
     },
     {
       "provider": "vultr",
       "source_url": "https://www.vultr.com/",
-      "checked_at": "2026-09-24T21:37:40+00:00",
+      "checked_at": "2026-09-25T07:49:18+00:00",
       "status": "unavailable",
       "count": 0,
-      "error": "HTTP Error 403: Forbidden"
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
     },
     {
       "provider": "digitalocean",
       "source_url": "https://www.digitalocean.com/",
-      "checked_at": "2026-09-24T21:37:40+00:00",
+      "checked_at": "2026-09-25T07:49:18+00:00",
       "status": "no_verified_offer",
       "count": 0
     },
     {
       "provider": "dreamhost",
       "source_url": "https://www.dreamhost.com/hosting/vps/",
-      "checked_at": "2026-09-24T21:37:40+00:00",
+      "checked_at": "2026-09-25T07:49:18+00:00",
       "status": "ok",
       "count": 4
     },
     {
       "provider": "namecheap",
       "source_url": "https://www.namecheap.com/hosting/vps/",
-      "checked_at": "2026-09-24T21:37:40+00:00",
+      "checked_at": "2026-09-25T07:49:18+00:00",
       "status": "unavailable",
       "count": 0,
       "error": "HTTP Error 403: Forbidden"
@@ -313,44 +534,42 @@
     {
       "provider": "inmotion",
       "source_url": "https://www.inmotionhosting.com/vps-hosting",
-      "checked_at": "2026-09-24T21:37:40+00:00",
+      "checked_at": "2026-09-25T07:49:18+00:00",
       "status": "ok",
       "count": 4
     },
     {
       "provider": "contabo",
       "source_url": "https://contabo.com/en/vps/",
-      "checked_at": "2026-09-24T21:37:40+00:00",
-      "status": "unavailable",
-      "count": 0,
-      "error": "HTTP Error 403: Forbidden"
+      "checked_at": "2026-09-25T07:49:18+00:00",
+      "status": "ok",
+      "count": 6
     },
     {
       "provider": "upcloud",
       "source_url": "https://upcloud.com/pricing/",
-      "checked_at": "2026-09-24T21:37:40+00:00",
-      "status": "no_verified_offer",
-      "count": 0
+      "checked_at": "2026-09-25T07:49:18+00:00",
+      "status": "ok",
+      "count": 3
     },
     {
       "provider": "ultahost",
       "source_url": "https://ultahost.com/vps-hosting",
-      "checked_at": "2026-09-24T21:37:40+00:00",
-      "status": "unavailable",
-      "count": 0,
-      "error": "HTTP Error 403: Forbidden"
+      "checked_at": "2026-09-25T07:49:18+00:00",
+      "status": "ok",
+      "count": 4
     },
     {
       "provider": "hostpapa",
       "source_url": "https://www.hostpapa.com/web-hosting-plan/vps-hosting/",
-      "checked_at": "2026-09-24T21:37:40+00:00",
+      "checked_at": "2026-09-25T07:49:18+00:00",
       "status": "ok",
       "count": 1
     },
     {
       "provider": "knownhost",
       "source_url": "https://www.knownhost.com/vps-hosting",
-      "checked_at": "2026-09-24T21:37:40+00:00",
+      "checked_at": "2026-09-25T07:49:18+00:00",
       "status": "ok",
       "count": 2
     }

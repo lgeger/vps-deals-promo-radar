@@ -23,7 +23,8 @@ def build():
     names = {p['id']: p['name'] for p in providers}
     stamp = data['updated_at']
     offers = data['offers']
-    visible = {p['id'] for p in providers if not p.get('require_offers') or any(o['provider'] == p['id'] for o in offers)}
+    checked = {c['provider'] for c in data['checks']}
+    visible = {p['id'] for p in providers if p['id'] in checked or not p.get('require_offers') or any(o['provider'] == p['id'] for o in offers)}
     def cards(items):
         return ''.join('<article><div class="meta">'+esc(names[o['provider']])+' · '+('官方标价' if o['kind']=='listed_price' else '申请型额度')+'</div><h3><a href="/deals/'+o['id']+'/">'+esc(o['name'])+'</a></h3><p class="price">'+(esc(o['currency'])+' '+esc(o['price'])+' <small>/ 月起</small>' if o['price'] else '企业资格审核')+'</p><p>'+esc(o['terms'])+'</p><a class="detail" href="/deals/'+o['id']+'/">查看条件与来源 ↗</a></article>' for o in items) or '<p class="notice">本次没有可核验条目。请查看供应商官网，勿依据过期价格下单。</p>'
     paths = []
