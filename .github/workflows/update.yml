@@ -11,7 +11,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,7 +21,7 @@ jobs:
         run: |
           python scraper.py
           python build.py
-      - name: Block snapshots that drop previously verified offers
+      - name: Block snapshots that drop previously verified offers or go stale past the ceiling
         run: python snapshot_guard.py
       - name: Publish snapshot
         run: |
@@ -32,6 +32,6 @@ jobs:
             git commit -m "chore: refresh official offers"
             git push
           fi
-      - name: Surface source outage after publishing honest empty state
+      - name: Confirm the published snapshot is not empty
         run: |
-          python -c "import json; d=json.load(open('data/offers.json')); assert d['offers'], 'No verified offers; inspect source checks'"
+          python -c "import json; d=json.load(open('data/offers.json')); assert d['offers'], 'No entries at all; inspect source checks'"

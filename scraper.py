@@ -15,8 +15,18 @@ from providers import load_providers
 
 ROOT = Path(__file__).resolve().parent
 UA = 'VPSDealsRadar/1.0'
-TRANSIENT_STATUS = {500, 502, 503, 504}
+# Provisional means worth retrying. 404/410 is the source saying "this URL is gone"; 403/429 is
+# an edge WAF saying "not from you, right now". Measured 2026-09-28 on contabo.com/en/vps/ and
+# ultahost.com/vps-hosting: identical URL and identical UA answered 200 from a residential
+# address and 403 from a datacenter address minutes apart. A single 403 is therefore not
+# evidence that a source is unreachable, and must not be recorded as one.
+TRANSIENT_STATUS = {403, 408, 425, 429, 500, 502, 503, 504}
+FETCH_ATTEMPTS = 3
+FETCH_BACKOFF = (3, 9)
 EXTRACT_ATTEMPTS = 3
+# Wall-clock ceiling for the whole fetch phase, so an all-blocked run degrades instead of
+# running into the workflow timeout and losing the build entirely.
+SCRAPE_BUDGET_SECONDS = 540
 
 class TextParser(HTMLParser):
     def __init__(self):
@@ -28,12 +38,17 @@ class TextParser(HTMLParser):
     def handle_data(self, data):
         if not self.skip and data.strip(): self.parts.append(' '.join(data.split()))
 
-def fetch(url):
-    """Retry transient network failures only: a 4xx is a definitive answer, not an outage."""
+def fetch(url, deadline=None):
+    """Retry provisional rejections only; a 404 or 410 is a definitive answer, not an outage."""
     last = None
-    for attempt in range(3):
+    for attempt in range(FETCH_ATTEMPTS):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=30) as r:
+            request = urllib.request.Request(url, headers={
+                'User-Agent': UA,
+                'Accept': 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.9',
+            })
+            with urllib.request.urlopen(request, timeout=30) as r:
                 if urlsplit(r.url).hostname != urlsplit(url).hostname:
                     raise ValueError('Cross-host redirect requires source review')
                 return r.read(4_000_000).decode('utf-8')
@@ -43,8 +58,11 @@ def fetch(url):
             last = exc
         except (urllib.error.URLError, TimeoutError, OSError) as exc:
             last = exc
-        if attempt < 2:
-            time.sleep(3 * (attempt + 1))
+        if attempt < FETCH_ATTEMPTS - 1:
+            pause = FETCH_BACKOFF[min(attempt, len(FETCH_BACKOFF) - 1)]
+            if deadline is not None and time.time() + pause > deadline:
+                break
+            time.sleep(pause)
     raise last
 
 def extract_offers(provider_id, text):
@@ -114,8 +132,45 @@ def extract_offers(provider_id, text):
             found.append(dict(name='KnownHost '+match[2]+' VPS', kind='listed_price', price=match[1], currency='USD', billing_period='month', evidence=match[0], terms='官方 '+match[2]+' VPS 起价：每月 $'+match[1]+' 起；配置、地区与期限以官网方案页为准。'))
     return found
 
+def load_previous():
+    """The currently published snapshot. Used only as the fallback for sources we cannot reach."""
+    target = ROOT / 'data/offers.json'
+    try:
+        return json.loads(target.read_text())
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def carry_forward(previous, checks):
+    """Re-publish last verified entries for providers this run could not re-verify.
+
+    Deleting an entry hides a price a reader can still buy at; showing it unmarked claims a
+    freshness we did not check. So the entry stays, keeps its original verified_at, and gains
+    an explicit stale flag naming the snapshot it was carried from and why.
+    """
+    if not previous or not previous.get('updated_at'):
+        return []
+    stamp = previous['updated_at']
+    held = []
+    for check in checks:
+        if check['status'] == 'ok':
+            continue
+        stale = [dict(o) for o in previous.get('offers', []) if o['provider'] == check['provider']]
+        if not stale:
+            continue
+        for item in stale:
+            item['stale'] = True
+            item['carried_from'] = stamp
+            item['carry_reason'] = check.get('error') or '本次未提取到可核验条目'
+        check['carried'] = len(stale)
+        held.extend(stale)
+    return held
+
+
 def scrape():
     now = datetime.now(timezone.utc).isoformat(timespec='seconds')
+    deadline = time.time() + SCRAPE_BUDGET_SECONDS
+    previous = load_previous()
     providers = load_providers()
     offers, checks = [], []
     for provider in providers:
@@ -124,10 +179,10 @@ def scrape():
         try:
             origin = '{0.scheme}://{0.netloc}'.format(urlsplit(url))
             robot = urllib.robotparser.RobotFileParser()
-            robot.parse(fetch(origin + '/robots.txt').splitlines())
+            robot.parse(fetch(origin + '/robots.txt', deadline).splitlines())
             if not robot.can_fetch(UA, url): raise ValueError('robots.txt disallows crawling')
             for attempt in range(EXTRACT_ATTEMPTS):
-                raw = fetch(url)
+                raw = fetch(url, deadline)
                 parser = TextParser(); parser.feed(raw)
                 text = ' | '.join(parser.parts)
                 found = extract_offers(provider['id'], text)
@@ -142,7 +197,8 @@ def scrape():
             check.update(status='unavailable', count=0, error=str(exc)[:200])
         checks.append(check)
         print(provider['id'], check['status'], check['count'])
-    # Never silently preserve old offers when today's source cannot be verified.
+    # Fresh entries first, then the carried ones, so a degraded run is still a complete site.
+    offers = offers + carry_forward(previous, checks)
     result = dict(updated_at=now, offers=offers, checks=checks)
     target = ROOT / 'data/offers.json'
     tmp = target.with_suffix('.tmp'); tmp.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n'); tmp.replace(target)
